@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="toolbar">
+    <button onclick="executeCommand('bold')">Bold</button>
+    <button onclick="executeCommand('italic')">Italic</button>
+    <button onclick="executeCommand('underline')">Underline</button>
+    <button onclick="executeCommand('insertOrderedList')">Numbered List</button>
+    <button onclick="executeCommand('insertUnorderedList')">Bullet List</button>
+    <button onclick="executeCommand('justifyLeft')">Align Left</button>
+    <button onclick="executeCommand('justifyCenter')">Align Center</button>
+    <button onclick="executeCommand('justifyRight')">Align Right</button>
+</div>
+
+<div id="editor-container">
+    <div id="editor" contenteditable="true"></div>
+</div>
+
+<button onclick="saveFile()">Save File</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+
